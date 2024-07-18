@@ -25,7 +25,7 @@
     --font-weight-medium: 500;
     --font-weight-large: 700;
 }
-body{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -162,7 +162,7 @@ main{
     height: 300px;
     font-family: "Inter", sans-serif;
     margin: 0 auto;
-    padding: 40px;
+
 }
 
 .main-currency-table .currency-table--title{
@@ -399,4 +399,94 @@ main{
 
 .plans-title h2{
     padding-top: 50px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--color-dark-warm);
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #757575;
+}
+
+.plans-container--card{
+    position: relative;
+    width: 60%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--color-light);
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended{
+    padding: 6px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 50px);
+    top: -15px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    color: var(--color-light);
+    font-size: 12px;
+}
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 18px;
+    color: var(--color-dark-warm);
+
+}
+.plan-card--price{
+    padding: 5px 0;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 50px;
+    color: var(--color-dark-warm);
+    margin: 0;
+    position: relative;
+}
+
+.plan-card--price span{
+    font-size: 14px;
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 40px);
+}
+
+.plan-card--saving{
+    font-size: 12px;
+    color: var(--color-light-dark);
+
+}
+
+.plan-card--ca{
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    line-height: 18px;
+    color: var(--color-dark);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--ca span{
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
 }
