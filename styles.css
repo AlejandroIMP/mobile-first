@@ -245,35 +245,36 @@ main{
 
 
 .main-product-detail{
+    width: 100%;
+    background-color: var(--color-dark-warm);
     position: relative;
-    width: calc(100% - 40px);
-    min-width: 300px;
-    padding: 20px 10px;
+    min-width: 320px;
     height: auto;
-    background-color: var(--color-dark-warm); 
+    padding: 20px 0;
 }
 
 .product-detail--batata-icon{
+    background-image: url('./assets/icons/batata.svg');
     position: absolute;
     width: 40px;
-    height: 25px;
+    height: 24px;
+    left: calc(50% - 25px);
     top: -10px;
-    left: calc(50% - 20px);
-    background-image: url("./assets/icons/batata.svg");
 }
 
 .product-detail--title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
+    position: relative;
+    top: 40px;
     text-align: center;
+    height: auto;
+    min-width: 288px;
+    margin: 0 10px;
 }
 .product-detail--title h2{
     margin-bottom: 20px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
     line-height: 26px;
     color: var(--color-light);
 }
@@ -287,7 +288,8 @@ main{
 }
 
 .product-cards--container{
-    margin-bottom: 30px;
+    position: static;
+    margin-top: 80px;
 }
 
 .product-detail--card{
@@ -309,7 +311,6 @@ main{
     line-height: 18px;
     font-weight: bold;
     margin-bottom: 16px;
-
 }
 
 .product-card--body{
@@ -360,6 +361,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .bitcoin-img-section{
     width: 100%;
