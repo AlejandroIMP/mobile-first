@@ -85,7 +85,7 @@ header img{
     margin-top: 35px;
     padding: 15px;
     width: 229px;
-    left: calc(50% - 130px);
+    left: calc(50% - 115px);
     background-color: var(--color-light);
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
@@ -94,7 +94,6 @@ header img{
     font-weight: var(--font-weight-large);
     text-decoration: none;
     color: var(--color-dark);
-
 }
 
 .header--button span{
@@ -154,15 +153,33 @@ main{
     color: var(--color-light-dark);
 }
 
+.main-tables-container{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+    scroll-snap-type: x proximity;
+}
 
+.main-tables-container::-webkit-scrollbar{
+    background-color: var(--color-primary-soft);
+    height: 5px;
+}
+
+.main-tables-container::-webkit-scrollbar-thumb{
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    border: 3px solid orange;
+}
 .main-currency-table{
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 300px;
     font-family: "Inter", sans-serif;
-    margin: 0 auto;
-
+    margin: 0 40px;
 }
 
 .main-currency-table .currency-table--title{
@@ -413,20 +430,40 @@ main{
     color: #757575;
 }
 
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--slider::-webkit-scrollbar{
+    background-color: var(--color-primary-soft);
+    height: 5px;
+}
+
+.plans-container--slider::-webkit-scrollbar-thumb{
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 60%;
-    min-width: 200px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--color-light);
     border-radius: 15px ;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.recommended{
+.recommended, .basic{
     padding: 6px;
     position: absolute;
     width: 100px;
@@ -456,10 +493,32 @@ main{
     position: relative;
 }
 
-.plan-card--price span{
+.basic-price{
+    font-size: 40px;
+}
+.basic-price span{
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 60px);
+}
+
+.recommended-price span{
     font-size: 14px;
     position: absolute;
     top: -5px;
+    left: calc(50% - 40px);
+}
+
+.forever-price {
+    font-size: 40px;
+
+}
+
+.forever-price span{
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
     left: calc(50% - 40px);
 }
 
@@ -472,7 +531,7 @@ main{
 .plan-card--ca{
     width: 140px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 14px;
     font-weight: bold;
     background-color: var(--color-background);
@@ -488,5 +547,6 @@ main{
     display: inline-block;
     width: 25px;
     height: 25px;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
+
